@@ -20,6 +20,7 @@
           const articleElement = document.createElement('div');
           articleElement.className = 'article';
           articleElement.innerHTML = `
+            <img src="${article.urlToImage || 'placeholder.jpg'}" alt="${article.title}">
             <h2><a href="${article.url}" target="_blank">${article.title}</a></h2>
             <p>${article.description}</p>
           `;
