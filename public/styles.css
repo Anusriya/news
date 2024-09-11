@@ -44,6 +44,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  .article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
   .article h2 {
     font-size: 1.25em;
     margin-bottom: 10px;
