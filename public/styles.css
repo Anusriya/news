@@ -1,0 +1,77 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/free-vector/gradient-blue-abstract-technology-background_23-2149213765.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff; /* White text for better contrast against the background */
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article {
+    flex: 1 1 calc(33.333% - 40px); /* Three columns with gap space */
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article h2 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+  
+  .article p {
+    color: #555;
+  }
+  
+  .article a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .article a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .article {
+      flex: 1 1 calc(50% - 40px); /* Two columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .article {
+      flex: 1 1 100%; /* Single column on very small screens */
+    }
+  }
+  
